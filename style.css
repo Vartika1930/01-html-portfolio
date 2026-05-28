@@ -1,0 +1,243 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+    --primary: #ff63be;
+    --primary-dark: #ff63be;
+    --text-dark: #2d2d2d;
+    --text-light: #666666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --border: #e0e0e0;
+    --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    --radius: 10px;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* ===== NAME & TAGLINE (h1 and first p — above header) ===== */
+body > h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+    background: linear-gradient(135deg, #ff63be, #ab5d8a);
+    padding: 50px 20px 10px 20px;
+    letter-spacing: 2px;
+}
+
+body > p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    background: linear-gradient(135deg, #5967a3, #805ca4);
+    padding: 0 20px 40px 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ===== HEADER & NAV ===== */
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-dark);
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+section h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+}
+
+section p {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+section p a {
+    font-weight: 600;
+    color: var(--primary);
+    border-bottom: 1px dashed var(--primary);
+    padding-bottom: 2px;
+}
+
+section p a:hover {
+    color: var(--primary-dark);
+    border-bottom: 1px solid var(--primary-dark);
+}
+
+/* ===== SKILLS LIST ===== */
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+ul li {
+    background-color: var(--bg-light);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+ul li:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer a {
+    color: #a78bfa;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 768px) {
+    body > h1 {
+        font-size: 32px;
+        padding-top: 40px;
+    }
+
+    nav {
+        gap: 0;
+        padding: 0 20px;
+    }
+
+    nav a {
+        padding: 15px 12px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 30px 25px;
+    }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 480px) {
+    body > h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+
+    ul {
+        gap: 8px;
+    }
+
+    ul li {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+}
