@@ -3,46 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact — Vartika</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+    <!-- NAME & TAGLINE -->
+    <h1>Vartika</h1>
+    <p>An Aspiring Coder!!</p>
+
+    <!-- HEADER -->
     <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="projects.html">Projects</a>
-    </nav>
-  </header>
-   <main>
-    <form action="#" method="POST">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-      <label for="name">Full Name:</label><br />
-      <input type="text" id="name" name="name"
-             placeholder="Your full name" required /><br /><br />
+    <!-- MAIN -->
+    <main>
 
-      <label for="email">Email Address:</label><br />
-      <input type="email" id="email" name="email"
-             placeholder="you@email.com" required /><br /><br />
+        <section>
+            <h2>Get In Touch</h2>
+            <p>
+                Have a question or want to connect?
+                Fill out the form below or reach me directly.
+            </p>
+        </section>
 
-      <label for="subject">Subject:</label><br />
-      <input type="text" id="subject" name="subject"
-             placeholder="What is this about?" /><br /><br />
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <h2>Send Me a Message</h2>
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message"
-                rows="6" cols="50"
-                placeholder="Write your message here..."
-                required></textarea><br /><br />
-                 <button type="submit">Send Message</button>
-      <button type="reset">Clear Form</button>
+            <form class="contact-form" action="#" method="POST">
 
-    </form>
-  </main>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
+                        required
+                    />
+                </div>
 
-  <footer>
-    <p>&copy;Vartika</p>
-  </footer>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@email.com"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="What is this about?"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <button type="reset" class="btn-reset">Clear</button>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- Direct Contact -->
+        <section>
+            <h2>Find Me Here</h2>
+            <ul class="contact-links">
+                <li>
+                    <span>💻</span>
+                    <a href="https://github.com/Vartika1930" target="_blank">
+                        github.com/Vartika1930
+                    </a>
+                </li>
+                <li>
+                    <span>📧</span>
+                    <a href="mailto:vartikapandey1930@email.com">
+                        vartikapandey1930@email.com
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Vartika</p>
+        <p>
+            <a href="https://github.com/Vartika1930" target="_blank">GitHub</a> |
+            <a href="mailto:vartikapandey1930@email.com">Email Me</a>
+        </p>
+    </footer>
 
 </body>
 </html>

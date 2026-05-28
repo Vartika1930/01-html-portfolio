@@ -3,53 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects — Vartika</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+    <!-- NAME & TAGLINE -->
+    <h1>Vartika</h1>
+    <p>An Aspiring Coder!!</p>
+
+    <!-- HEADER -->
     <header>
-        <h2>My Projects</h2>
         <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- MAIN -->
     <main>
-        <table border="1">
-        <thead>
-            <tr>
-            <th>#</th>
-            <th>Project Name</th>
-            <th>Technologies</th>
-            <th>GitHub Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>1</td>
-            <td>HTML Portfolio</td>
-            <td>HTML</td>
-            <td><a href="#" target="_blank">View Code</a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>CSS Styled Portfolio</td>
-          <td>HTML, CSS</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>JavaScript Quiz App</td>
-          <td>HTML, CSS, JS</td>
-          <td>—</td>
-        </tr>
-      </tbody>
-        </table>
-  </main>
 
-  <footer>
-    <p>&copy; Vartika</p>
-  </footer>
+        <section>
+            <h2>My Projects</h2>
+            <p>
+                Every project I build is pushed to GitHub.
+                This list grows as I learn more technologies.
+            </p>
+        </section>
+
+        <!-- Projects Table -->
+        <section>
+            <h2>All Projects</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Technologies</th>
+                            <th>Status</th>
+                            <th>GitHub</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>HTML Portfolio</td>
+                            <td>Personal portfolio built with pure HTML</td>
+                            <td><span class="tech-tag">HTML5</span></td>
+                            <td><span class="status done">✅ Complete</span></td>
+                            <td>
+                                <a href="https://github.com/Vartika1930/01-html-portfolio"
+                                   target="_blank" class="table-link">View Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>CSS Portfolio</td>
+                            <td>Styled portfolio with CSS</td>
+                            <td>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                            </td>
+                            <td><span class="status done">✅ Complete</span></td>
+                            <td>
+                                <a href="https://github.com/Vartika1930/01-html-portfolio"
+                                   target="_blank" class="table-link">View Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>JavaScript Quiz App</td>
+                            <td>Interactive quiz with score tracking</td>
+                            <td>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </td>
+                            <td><span class="status soon">🔜 Coming Soon</span></td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>React Todo App</td>
+                            <td>Todo list built with React hooks</td>
+                            <td><span class="tech-tag">React</span></td>
+                            <td><span class="status soon">🔜 Coming Soon</span></td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>React Movie Search</td>
+                            <td>Search movies using external API</td>
+                            <td>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">API</span>
+                            </td>
+                            <td><span class="status soon">🔜 Coming Soon</span></td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>Express REST API</td>
+                            <td>Backend API with full CRUD</td>
+                            <td>
+                                <span class="tech-tag">Node</span>
+                                <span class="tech-tag">Express</span>
+                            </td>
+                            <td><span class="status soon">🔜 Coming Soon</span></td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>MERN Auth App</td>
+                            <td>Full stack login and register</td>
+                            <td>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node</span>
+                            </td>
+                            <td><span class="status soon">🔜 Coming Soon</span></td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td>MERN Full Stack App</td>
+                            <td>Complete full stack application</td>
+                            <td>
+                                <span class="tech-tag">MERN</span>
+                            </td>
+                            <td><span class="status soon">🔜 Coming Soon</span></td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Vartika</p>
+        <p>
+            <a href="https://github.com/Vartika1930" target="_blank">GitHub</a> |
+            <a href="mailto:vartikapandey1930@email.com">Email Me</a>
+        </p>
+    </footer>
+
 </body>
 </html>
